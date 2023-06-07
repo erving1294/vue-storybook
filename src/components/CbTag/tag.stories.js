@@ -1,14 +1,14 @@
-import CibertecTag from './tag.vue'
+import CbTag from './index.vue'
 import { TagType } from './types'
 
 export default {
-  title: 'Atom/Tag',
-  component: CibertecTag,
+  title: 'Atoms/Tag',
+  component: CbTag,
   tags: ['autodocs'],
   render: (args) => ({
     // Components used in your story `template` are defined in the `components` object
     components: {
-      CibertecTag
+      CbTag
     },
     // The story's `args` need to be mapped into the template through the `setup()` method
     setup() {
@@ -19,7 +19,7 @@ export default {
       }
     },
     // Then, the spread values can be accessed directly in the template
-    template: '<CibertecTag v-bind="$props" text="Presencial" />'
+    template: '<CbTag v-bind="$props" text="Presencial" />'
   }),
   argTypes: {
     type: {

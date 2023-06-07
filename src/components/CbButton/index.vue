@@ -16,11 +16,6 @@ defineProps({
   }
 })
 </script>
-<script lang="ts">
-export default {
-  name: 'CibertecButton'
-}
-</script>
 <template>
   <button
     :class="[

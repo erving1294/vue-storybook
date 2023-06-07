@@ -1,14 +1,14 @@
-import CibertecButton from './button.vue'
+import CbButton from './index.vue'
 import { ButtonType } from './types'
 
 export default {
-  title: 'Atom/Button',
-  component: CibertecButton,
+  title: 'Atoms/Button',
+  component: CbButton,
   tags: ['autodocs'],
   render: (args) => ({
     // Components used in your story `template` are defined in the `components` object
     components: {
-      CibertecButton
+      CbButton
     },
     // The story's `args` need to be mapped into the template through the `setup()` method
     setup() {
@@ -18,7 +18,7 @@ export default {
       }
     },
     // Then, the spread values can be accessed directly in the template
-    template: '<CibertecButton v-bind="$props">Button</CibertecButton>'
+    template: '<CbButton v-bind="$props">Button</CbButton>'
   }),
   argTypes: {
     type: {
@@ -26,6 +26,9 @@ export default {
         type: 'select'
       },
       options: [ButtonType.Primary, ButtonType.Secondary]
+    },
+    disabled: {
+      control: 'boolean'
     }
   }
 }
