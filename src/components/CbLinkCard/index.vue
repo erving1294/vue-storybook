@@ -11,7 +11,7 @@ export default {
 }
 </script>
 <template>
-  <div class="bg-[#CCD9EC] w-[352px] py-7 px-4 rounded-lg flex justify-between">
+  <div class="bg-[#CCD9EC] w-[352px] py-7 px-4 rounded-lg flex items-center justify-between">
     <span class="uppercase font-bold">{{ text }}</span>
     <div>
       <svg
